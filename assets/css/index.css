@@ -1,0 +1,59 @@
+* {box-sizing: border-box;}
+
+/* Barra de navegacion */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(144, 83, 22);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Links dentro de la barra */
+.navbar a {
+    float: left;
+    display: block;
+    color: bisque;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Cambio de fondo al poner el mouse sobre el link */
+.navbar a:hover {
+    background: bisque;
+    color: rgb(144, 83, 22);
+}
+
+/* Estilo de la barra de busqueda */
+
+.navbar .search-container {
+    float: right;
+}
+
+.navbar input[type=text] {
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    font-size: 17 px;
+    background: white;
+}
+
+.navbar .search-container button {
+    float: right;
+    padding: 4px 8px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: rgb(241, 187, 120);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+    background-color: #ccc;
+}
+
+.main {
+    margin-top: 30px;
+}
