@@ -12,31 +12,62 @@
         <!-- Logo -->
         <img src="assets/images/logo.png" alt="FOODIE logo">
         <!-- Barra de navegacion -->
-        <a href="index.html">INICIO</a>
-        <a href="#restaurantes">RESTAURANTES</a>
-        <a href="#puestos">PUESTOS</a>
-        <a href="#cafeterias">CAFETERIAS</a>
-        <a href="#panaderias">PANADERIAS</a>
+        <div class="navbar-links">
+            <a href="index.html">INICIO</a>
+            <a href="#restaurantes">RESTAURANTES</a>
+            <a href="#puestos">PUESTOS</a>
+            <a href="#cafeterias">CAFETERIAS</a>
+            <a href="#panaderias">PANADERIAS</a>
+        </div>
         <!-- Search bar -->
         <div class="searchBar">
             <input id="searchQueryInput" type="text" name="searchQueryInput" value="" />
             <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
-              <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#666666" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
-              </svg>
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#666666" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+            </svg>
             </button>
         </div>
     </div>
+
+    <!-- Barra de navegacion chica -->
+    <header id="mini_navbar">
+        <nav class="mini-navbar-container container">
+            <div class="mini-navbar-logo"><img src="assets/images/logo.png" alt="FOODIE logo"></div>
+            <button
+            type="button"
+            id="mini-navbar-toggle"
+            aria-controls="mini-navbar-menu"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+            >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <div id="mini-navbar-menu" aria-labelledby="mini-navbar-toggle">
+            <ul class="mini-navbar-links">
+                <li class="mini-navbar-item"><a class="mini-navbar-link" href="/about">INICIO</a></li>
+                <li class="mini-navbar-item"><a class="mini-navbar-link" href="/blog">RESTAURANTES</a></li>
+                <li class="mini-navbar-item"><a class="mini-navbar-link" href="/careers">PUESTOS</a></li>
+                <li class="mini-navbar-item"><a class="mini-navbar-link" href="/contact">CAFETERIAS</a></li>
+                <li class="mini-navbar-item"><a class="mini-navbar-link" href="/contact">PANADERIAS</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    
     <!-- Inicia el cuerpo de index -->
     <main>
         <p>
-            <!-- Imagen de comida con texto de bienvenida -->
-           <div class="food_bg">
-            <img src="/assets/images/food_bg.jpg" alt="Food image">
-                <p class="bienvenida">¡BIENVENIDO A <br> FOODIE!</p>
-                <p class="text">En foodie encontrarás las mejores Recomendaciones <br>
-                    culinarias de la ciudad de CHIHUAHUA</p>
-           </div>
+        <!-- Imagen de comida con texto de bienvenida -->
+        <div class="food_bg">
+            <img src="assets/images/food_bg.jpg" alt="Food image">
+            <p class="bienvenida">¡BIENVENIDO A <br> FOODIE!</p>
+            <p class="text">En foodie encontrarás las mejores Recomendaciones <br>
+                            culinarias de la ciudad de CHIHUAHUA</p>
+        </div>
         </p>
     </main>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
